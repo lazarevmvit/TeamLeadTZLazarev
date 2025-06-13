@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp - Онлайн-курс по развитию уверенности и мышления</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Онлайн-курс LevelUp</h1>
+    </header>
+    <main>
+        <!-- Промо -->
+        <section id="promo" class="promo-section video-background">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/vd.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <h2>Курс LevelUp</h2>
+            <div class="flex-centered">
+                <img src="images/prod.png" alt="LevelUp Курс">
+                <ul>
+                    <li>Психология и уверенность</li>
+                    <li>Навыки общения и влияния</li>
+                    <li>Мышление и привычки успеха</li>
+                    <button class="order-button" onclick="scrollToOrderForm()">Записаться</button>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Модули курса -->
+        <section id="unique-block" class="ingredients-section">
+            <div class="flex-centered">
+                <div class="list-container" style="width: 500px; padding: 10px;">
+                    <ul class="ingredients fotojpeg">
+                        <li><div class="ingredient-item"><img src="images/1.jpeg" alt=""><span>Модуль 1: Уверенность</span></div></li>
+                        <li><div class="ingredient-item"><img src="images/2.jpeg" alt=""><span>Модуль 2: Голос и язык тела</span></div></li>
+                        <li><div class="ingredient-item"><img src="images/3.jpeg" alt=""><span>Модуль 3: Мышление успеха</span></div></li>
+                    </ul>
+                </div>
+                <div><img src="images/prod.png" alt="LevelUp Курс" class="center-imageblock2"><button class="order-button" onclick="scrollToOrderForm()">Записаться</button></div>
+                <div class="list-container" style="width: 500px; padding: 10px;">
+                    <ul class="ingredients fotojpeg">
+                        <li><div class="ingredient-item"><img src="images/4.jpeg" alt=""><span>Модуль 4: Цели и самодисциплина</span></div></li>
+                        <li><div class="ingredient-item"><img src="images/5.jpeg" alt=""><span>Модуль 5: Общение и влияние</span></div></li>
+                        <li><div class="ingredient-item"><img src="images/6.jpeg" alt=""><span>Модуль 6: Преодоление страхов</span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section id="review" class="reviews-section">
+            <div class="reviews-carousel">
+                <div class="review fotojpg">
+                    <img src="images/p1.jpg" alt="Отзыв 1">
+                    <h3>Алексей</h3>
+                    <p>"Курс помог мне обрести уверенность в себе. Я начал общаться с людьми свободно и запустил свой проект!"</p>
+                </div>
+                <div class="review fotojpg">
+                    <img src="images/p2.jpg" alt="Отзыв 2">
+                    <h3>Иван</h3>
+                    <p>"После LevelUp я научился управлять эмоциями и влиять на собеседника. Это изменило мои отношения в работе и жизни."</p>
+                </div>
+                <div class="review fotojpg">
+                    <img src="images/p3.jpg" alt="Отзыв 3">
+                    <h3>Алиса</h3>
+                    <p>"Я стала гораздо увереннее в себе, научилась ставить цели и достигать их. Курс действительно прокачал мышление!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Описание -->
+        <section id="promo-2" class="promo-section woll">
+            <div class="flex-centered">
+                <img src="images/7.png" alt="Курс LevelUp" class="promo-image">
+                <div class="promo-description" style="width: 40%;">
+                    <h2>LevelUp – курс, который меняет мышление</h2>
+                    <p style="font-size: 1.2em;">Вы научитесь действовать уверенно, ставить цели, управлять собой и эффективно общаться. Это практический курс для тех, кто хочет выйти на новый уровень жизни.</p>
+                </div>
+            </div>
+            <div class="flex-centered">
+                <ul class="horizontal-list">
+                    <li><h3>Уверенность и лидерство</h3></li>
+                    <li><h3>Навыки влияния</h3></li>
+                    <li><h3>Достижение целей</h3></li>
+                </ul>
+            </div>
+            <button class="order-button" onclick="scrollToOrderForm()">Пройти курс</button>
+        </section>
+
+        <!-- Форма -->
+        <section id="order-form" class="order-form-section">
+            <h2>Записаться на курс LevelUp</h2>
+            <div class="countdown-timer" id="countdown-timer">30:00</div>
+            <div class="flex-centered" style="margin-top: 40px;">
+                <div>
+                    <img src="images/prod.png" alt="Курс LevelUp" class="center-image">
+                    <div class="pricing">
+                        <span class="old-price">10 000₽</span>
+                        <span class="new-price">5 900₽</span>
+                    </div>
+                </div>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                        <span class="hint">Например: Иван</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="text" id="phone" placeholder="Ваш телефон" pattern="[0-9]*" required>
+                        <span class="hint">Например: 79001234567</span>
+                    </div>
+                    <button type="submit">Записаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Курс LevelUp. Все права защищены.</p>
+    </footer>
+</body>
+</html>
